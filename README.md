@@ -1,1 +1,1 @@
-Mock-up Spotify Survey Form Page
+Mock-up Spotify Survey Form
