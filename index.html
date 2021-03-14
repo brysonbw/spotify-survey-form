@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Survey</title>
+    <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/spotify-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Spotify Survey Form</h1>
+            <p id="description">
+                Thank you for taking the time to help improve our streaming service
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+    />
+    </div>
+    <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+    />
+    </div>
+    <div class="form-group">
+    <label id="number-label" for="number"
+        >Age</label
+    >
+    <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Enter your Age"
+    />
+    </div>
+    <div class="form-group">
+        <p>Gender</p>
+        <select id="dropdown-gender" name="gender" class="form-control" required>
+            <option disabled selected value>Select Gender</option>
+            <option value="male-man">Male/Man</option>
+            <option value="female-woman">Female/Woman</option>
+            <option value="transmale-transman">TransMale/TransMan</option>
+            <option value="transfemale-transwoman">TransFemale/TransWoman</option>
+            <option value="other">Other</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+        </div>
+    
+    <div class="form-group">
+    <p>Which Spotify supscription plan do you have?</p>
+    <select id="dropdown" name="spotify-plan" class="form-control" required>
+        <option disabled selected value>Select Spotify supscription plan</option>
+        <option value="spotify-free">Spotify Free</option>
+        <option value="Spotify Premium">Spotify Premium</option>
+    </select>
+    </div>
+
+    <div class="form-group">
+    <p>How often do you use Spotify?</p>
+    <label>
+        <input
+        name="user-usage"
+        value="every-day"
+        type="radio"
+        class="input-radio"
+        checked
+        />Every day</label
+    >
+    <label>
+        <input
+        name="user-usage"
+        value="few-times-a-week"
+        type="radio"
+        class="input-radio"
+        />A few times a week</label
+    >
+
+    <label
+        ><input
+        name="user-usage"
+        value="once-a-week"
+        type="radio"
+        class="input-radio"
+        />About once a week</label
+    >
+
+    <label>
+        <input
+        name="user-usage"
+        value="few-times-a-month"
+        type="radio"
+        class="input-radio"
+        />A few times a month</label
+    >
+
+    <label
+        ><input
+        name="user-usage"
+        value="few-times-a-year"
+        type="radio"
+        class="input-radio"
+        />A few times a year</label
+    >
+
+    <label
+    ><input
+    name="user-usage"
+    value="never"
+    type="radio"
+    class="input-radio"
+    />Never</label
+>
+    </div>
+
+<div class="form-group">
+    <label for="spotify-purpose">
+        What purpose(s) do you use Spotify for?
+    </label>
+    <textarea name="spotify-purpose" id="spotify-purpose" cols="30" rows="10">   
+    </textarea>
+</div>
+
+    <div class="form-group">
+    <p>
+        What genre(s) of music you listen to on Spotify?
+        <span class="clue">(Check all that apply)</span>
+    </p>
+
+    <label
+        ><input
+        name="genre"
+        value="pop"
+        type="checkbox"
+        class="input-checkbox"
+        />Pop</label
+    >
+
+    <label
+    ><input
+    name="genre"
+    value="hip-hop-rap"
+    type="checkbox"
+    class="input-checkbox"
+    />Hip-Hop/Rap</label
+>
+
+    <label
+        ><input
+        name="genre"
+        value="rock"
+        type="checkbox"
+        class="input-checkbox"
+        />Rock</label
+    >
+
+    <label
+        ><input
+        name="genre"
+        value="electronic"
+        type="checkbox"
+        class="input-checkbox"
+        />Electronic</label
+    >
+
+    <label
+        ><input
+        name="genre"
+        value="latin"
+        type="checkbox"
+        class="input-checkbox"
+        />Latin</label
+    >
+
+
+    <label
+        ><input
+        name="genre"
+        value="alternative"
+        type="checkbox"
+        class="input-checkbox"
+        />Alternative</label
+    >
+
+    <label
+        ><input
+        name="genre"
+        value="classical"
+        type="checkbox"
+        class="input-checkbox"
+        />Classical</label
+    >
+
+    <label
+        ><input
+        name="genre"
+        value="k-pop"
+        type="checkbox"
+        class="input-checkbox"
+        />K-Pop</label
+    >
+
+
+    <label
+        ><input
+        name="genre"
+        value="country"
+        type="checkbox"
+        class="input-checkbox"
+        />Country</label
+    >
+
+    <label
+        ><input
+        name="genre"
+        value="metal"
+        type="checkbox"
+        class="input-checkbox"
+        />Metal</label
+    >
+
+    <label
+        ><input
+        name="genre"
+        value="other"
+        type="checkbox"
+        class="input-checkbox"
+        />Other</label
+    >
+    </div>
+    
+    <div class="form-group">
+    <p>Any comments or suggestions?</p>
+    <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+    ></textarea>
+    </div>
+
+    <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">
+        Submit
+    </button>
+    </div>
+</form>
+</div>
+</body>
+</html>
